@@ -3,10 +3,10 @@ $(function () {
     dots: true,
     infinite: true,
     speed: 300,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     slidesToShow: 1,
-    arrows: false,
+    arrows: true,
     adaptiveHeight: true,
     responsive: [
       {
@@ -39,11 +39,11 @@ $(function () {
     dots: true,
     infinite: true,
     speed: 300,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     slidesToShow: 3,
     adaptiveHeight: true,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,

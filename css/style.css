@@ -253,6 +253,23 @@ input[type=submit] {
   height: auto;
 }
 
+header .slick-prev {
+  left: 25px;
+  top: 35%;
+}
+header .slick-prev::before {
+  color: black;
+  font-size: 30px;
+}
+header .slick-next {
+  right: 25px;
+  top: 35%;
+}
+header .slick-next::before {
+  color: black;
+  font-size: 30px;
+}
+
 nav {
   padding: 18px 0px;
   align-items: center;
@@ -516,50 +533,37 @@ nav .nav__btn {
   position: absolute;
   left: 10%;
   bottom: 30%;
-}
-.about__part .about__part--left .circle__animation .pie-wrap {
-  position: relative;
-  width: 100px;
-  height: auto;
+  width: 83px;
+  height: 83px;
+  background: url("../images/heartimage.webp") center center no-repeat;
+  background-size: cover;
   border-radius: 50%;
-  border: 5px solid #fff;
 }
-.about__part .about__part--left .circle__animation .pie-wrap:before,
-.about__part .about__part--left .circle__animation .pie-wrap:after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 150px;
-  height: 150px;
-  clip: rect(0px, 75px, 150px, 0px);
-  background-color: white;
-  transform: rotate3d(0, 0, 1, 0deg);
-  animation: 2s spin2 linear 4s forwards;
-  z-index: 2;
+.about__part .about__part--left .custom-loader {
+  border: 16px solid #F3F3F3;
+  border-radius: 50%;
+  border-top: 20px solid rgb(255, 106, 0);
+  border-right: 20px solid rgb(255, 106, 0);
+  border-bottom: 20px solid rgb(255, 106, 0);
+  width: 83px;
+  height: 83px;
+  animation: custom-fill ease-in-out 3s infinite, custom-rotate-loader 3s infinite;
+  transform-origin: center center;
 }
-.about__part .about__part--left .circle__animation .pie-wrap:after {
-  content: " ";
-  background: black;
-  z-index: 1;
-  animation: 2s spin linear 2s forwards;
-}
-@keyframes spin {
-  from {
-    transform: rotate3d(0, 0, 1, 0deg);
+@keyframes custom-fill {
+  0% {
+    transform: rotate(30deg);
   }
+  25% {
+    transform: rotate(270deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes custom-rotate-loader {
   to {
-    transform: rotate3d(0, 0, 1, 180deg);
-  }
-}
-@keyframes spin2 {
-  from {
-    background: black;
-    transform: rotate3d(0, 0, 1, 180deg);
-  }
-  to {
-    background: black;
-    transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate(1turn);
   }
 }
 .about__part .about__part--right {
@@ -635,6 +639,22 @@ nav .nav__btn {
 }
 .project__part .project__part--content {
   justify-content: space-between;
+}
+.project__part .project__part--content .slick-prev {
+  left: 75%;
+  top: -80px;
+}
+.project__part .project__part--content .slick-prev::before {
+  color: black;
+  font-size: 30px;
+}
+.project__part .project__part--content .slick-next {
+  right: 10%;
+  top: -80px;
+}
+.project__part .project__part--content .slick-next::before {
+  color: black;
+  font-size: 30px;
 }
 .project__part .project__part--content .slick-list {
   overflow: visible;
@@ -1051,12 +1071,14 @@ footer .foot .footer__one p {
   padding-bottom: 31px;
   padding-top: 18px;
 }
-footer .foot .footer__two input {
+footer .foot .footer__two .email__input {
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid #E8E9EA;
   color: #E8E9EA;
   border-radius: 4px;
   padding-right: 86px;
+  padding-left: 10px;
+  margin: 0px;
 }
 footer .foot .footer__two .line {
   display: flex;
@@ -1481,6 +1503,10 @@ footer .foot .footer__two .footer_logos {
   }
   .blogs__part .blogs__container .blog__cards .blog__card img {
     width: 100%;
+  }
+  .blogs__part .blogs__container .blog__cards .blog__card .blog__card--content .blog__card--inside img {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .testimonial__part .testimonial__sec h2 {
     width: 100%;

@@ -14,6 +14,28 @@
   height: auto;
 }
 
+header {
+  .slick-prev {
+    left: 25px;
+    top: 35%;
+
+    &::before {
+      color: black;
+      font-size: 30px;
+    }
+  }
+
+  .slick-next {
+    right: 25px;
+    top: 35%;
+
+    &::before {
+      color: black;
+      font-size: 30px;
+    }
+  }
+}
+
 nav {
   padding: 18px 0px;
   align-items: center;
@@ -350,57 +372,39 @@ nav {
       position: absolute;
       left: 10%;
       bottom: 30%;
-
-      .pie-wrap {
-        position: relative;
-        width: 100px;
-        height: auto;
-        border-radius: 50%;
-        border: 5px solid $white-color;
+      width: 83px; // Adjust as needed
+      height: 83px; // Adjust as needed
+      background: url('../images/heartimage.webp') center center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+    }
+    .custom-loader {
+      border: 16px solid #F3F3F3;
+      border-radius: 50%;
+      border-top: 20px solid rgb(255, 106, 0);
+      border-right: 20px solid rgb(255, 106, 0);
+      border-bottom: 20px solid rgb(255, 106, 0);
+      width: 83px;
+      height: 83px;
+      animation: custom-fill ease-in-out 3s infinite, custom-rotate-loader 3s infinite;
+      transform-origin: center center;
+    }
+    
+    @keyframes custom-fill {
+      0% {
+        transform: rotate(30deg);
       }
-
-      .pie-wrap:before,
-      .pie-wrap:after {
-        content: " ";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 150px;
-        height: 150px;
-        clip: rect(0px, 75px, 150px, 0px);
-        background-color: white;
-        transform: rotate3d(0, 0, 1, 0deg);
-        animation: 2s spin2 linear 4s forwards;
-        z-index: 2;
+      25% {
+        transform: rotate(270deg);
       }
-
-      .pie-wrap:after {
-        content: " ";
-        background: black;
-        z-index: 1;
-        animation: 2s spin linear 2s forwards;
+      50% {
+        transform: rotate(360deg);
       }
-
-      @keyframes spin {
-        from {
-          transform: rotate3d(0, 0, 1, 0deg);
-        }
-
-        to {
-          transform: rotate3d(0, 0, 1, 180deg);
-        }
-      }
-
-      @keyframes spin2 {
-        from {
-          background: black;
-          transform: rotate3d(0, 0, 1, 180deg);
-        }
-
-        to {
-          background: black;
-          transform: rotate3d(0, 0, 1, 360deg);
-        }
+    }
+    
+    @keyframes custom-rotate-loader {
+      to {
+        transform: rotate(1turn);
       }
     }
   }
@@ -501,7 +505,27 @@ nav {
   .project__part--content {
     justify-content: space-between;
 
-    .slick-list{
+    .slick-prev {
+      left: 75%;
+      top: -80px;
+
+      &::before {
+        color: black;
+        font-size: 30px;
+      }
+    }
+
+    .slick-next {
+      right: 10%;
+      top: -80px;
+
+      &::before {
+        color: black;
+        font-size: 30px;
+      }
+    }
+
+    .slick-list {
       overflow: visible;
     }
 
@@ -1033,12 +1057,14 @@ footer {
     // second, third and fourth column design of the footer.
     .footer__two {
 
-      input {
+      .email__input {
         background-color: rgba(0, 0, 0, 0.9);
         border: 1px solid $light-grey;
         color: $light-grey;
         border-radius: 4px;
         padding-right: 86px;
+        padding-left: 10px;
+        margin: 0px;
       }
 
       .line {
@@ -1714,8 +1740,17 @@ footer {
         .blog__card {
           width: 100%;
 
+
           img {
             width: 100%;
+          }
+
+          .blog__card--content {
+            .blog__card--inside {
+              img {
+                width: fit-content;
+              }
+            }
           }
         }
       }
