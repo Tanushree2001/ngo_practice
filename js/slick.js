@@ -71,7 +71,7 @@ $(function() {
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     autoplay: true,
     arrows: false,
     // slidesToScroll: 3,
