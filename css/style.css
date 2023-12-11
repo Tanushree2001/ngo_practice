@@ -73,7 +73,7 @@ a {
 @font-face {
   font-family: Roboto;
   src: url(../vendor/fonts/Roboto/Roboto-Regular.ttf);
-  font-display: block;
+  font-display: swap;
 }
 .container {
   width: 100%;
