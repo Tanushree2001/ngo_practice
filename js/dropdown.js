@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const barImg = document.querySelector(".bar__img");
   const crossImg = document.querySelector(".cross__img");
 
-  // crossImg.style.display = 'none';
-
   // Add a click event listener to the bar icon
   barIcon.addEventListener("click", function () {
     // Toggle the 'open' class on the dropdown menu
