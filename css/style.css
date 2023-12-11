@@ -254,7 +254,7 @@ input[type=submit] {
   }
 }
 .background {
-  background-image: url(../images/BGImage.png);
+  background-image: url("../images/BGImage.webp");
   background-size: cover;
   width: 100%;
   height: auto;
@@ -627,6 +627,7 @@ nav .nav__btn {
 .project__part {
   margin-top: 144px;
   margin-bottom: 114px;
+  overflow: hidden;
 }
 .project__part .line__container {
   padding-bottom: 32px;
@@ -641,6 +642,9 @@ nav .nav__btn {
 }
 .project__part .project__part--content {
   justify-content: space-between;
+}
+.project__part .project__part--content .slick-list {
+  overflow: visible;
 }
 .project__part .project__part--content .slick-track {
   display: flex;
@@ -966,7 +970,7 @@ nav .nav__btn {
 }
 .cta__part--div {
   flex-direction: column;
-  background-image: url(../images/cta_image.png);
+  background-image: url("../images/cta_image.webp");
   padding: 92px 0;
   align-items: center;
   text-align: center;

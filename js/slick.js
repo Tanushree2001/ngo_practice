@@ -67,46 +67,42 @@ $(function() {
   //     }
   //   ]
   // });
-  $(".responsive").slick({
+  
+  $('.responsive').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
+    autoplay: false,
+    autoplaySpeed: 1000,
     slidesToShow: 3,
-    autoplay: true,
-    arrows: false,
-    // slidesToScroll: 3,
     adaptiveHeight: true,
+    arrows:false,
     responsive: [
       {
         breakpoint: 1024,
-        // breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
         }
       },
       {
-        // breakpoint: 600,
         breakpoint: 992,
-        // breakpoint: 960,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        // breakpoint: 480,
         breakpoint: 768,
-        // breakpoint: 720,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         }
       }
     ]
-  });
+  });  
 });
 
 

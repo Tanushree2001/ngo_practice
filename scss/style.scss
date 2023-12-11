@@ -5,7 +5,7 @@
 @use "./form" as *;
 
 .background {
-  background-image: url(../images/BGImage.png);
+  background-image: url('../images/BGImage.webp');
   // width: 100%;
   // height: 100% !important;
   background-size: cover;
@@ -482,6 +482,7 @@ nav {
 .project__part {
   margin-top: 144px;
   margin-bottom: 114px;
+  overflow: hidden;
 
   .line__container {
     padding-bottom: 32px;
@@ -499,6 +500,10 @@ nav {
 
   .project__part--content {
     justify-content: space-between;
+
+    .slick-list{
+      overflow: visible;
+    }
 
     .slick-track {
       display: flex;
@@ -905,7 +910,7 @@ nav {
 
   &--div {
     flex-direction: column;
-    background-image: url(../images/cta_image.png);
+    background-image: url('../images/cta_image.webp');
     padding: 92px 0;
     align-items: center;
     text-align: center;
