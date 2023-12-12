@@ -539,6 +539,9 @@ nav .nav__btn {
   background-size: cover;
   border-radius: 50%;
 }
+.about__part .about__part--left .custom-loader-wrapper {
+  animation: custom-rotate-loader 3s infinite;
+}
 .about__part .about__part--left .custom-loader {
   border: 16px solid #F3F3F3;
   border-radius: 50%;
@@ -547,8 +550,9 @@ nav .nav__btn {
   border-bottom: 20px solid rgb(255, 106, 0);
   width: 83px;
   height: 83px;
-  animation: custom-fill ease-in-out 3s infinite, custom-rotate-loader 3s infinite;
+  animation: custom-fill ease-in-out 3s infinite;
   transform-origin: center center;
+  will-change: transform;
 }
 @keyframes custom-fill {
   0% {
