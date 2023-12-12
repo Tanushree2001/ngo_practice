@@ -847,7 +847,7 @@ nav .nav__btn {
 }
 
 .testimonial__part .testimonial__sec {
-  background-image: url(../images/world-map1.png);
+  background-image: url(../images/world-map1.webp);
   width: 100%;
   margin-top: 66px;
   -o-object-fit: cover;
@@ -1058,7 +1058,7 @@ nav .nav__btn {
 
 footer {
   margin: 135px 0;
-  background-image: url(../images/footer_bg.png);
+  background-image: url(../images/footer_bg.webp);
   background-color: rgba(0, 0, 0, 0.9);
 }
 footer .foot {
