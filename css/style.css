@@ -536,6 +536,24 @@ nav .nav__btn {
   height: 16px;
   background-color: #DC9C1A;
 }
+.about__part .about__part--left .map__content6 {
+  left: 24%;
+  top: 28%;
+}
+.about__part .about__part--left .map__content6 .map__content--circle6 {
+  width: 10px;
+  height: 10px;
+  background-color: #DC9C1A;
+}
+.about__part .about__part--left .map__content7 {
+  left: 62%;
+  top: 68%;
+}
+.about__part .about__part--left .map__content7 .map__content--circle7 {
+  width: 16px;
+  height: 16px;
+  background-color: #1A7C5F;
+}
 .about__part .about__part--left .circle__animation {
   position: absolute;
   left: 10%;
@@ -961,7 +979,14 @@ nav .nav__btn {
   justify-content: center;
   padding-bottom: 146px;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test {
+  border: 1px solid #F05E28;
+  padding: 0px 20px;
+  border-radius: 0 20px;
+}
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content {
+  position: relative;
+  top: -30px;
   padding: 68px 45px;
   width: 764px;
   border-radius: 0px 20px;
@@ -969,23 +994,23 @@ nav .nav__btn {
   box-shadow: 2px 6px 12px 0px rgba(0, 0, 0, 0.1);
   z-index: 6;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content--left {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--left {
   width: 35%;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content--left img {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--left img {
   border-radius: 10px;
   padding-bottom: 10px;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content--right {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--right {
   width: 65%;
   padding-left: 60px;
   border-left: 1px solid #E5E5E5;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content--right p {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--right p {
   color: var(--Secondary-text, #525560);
   font-size: 14px;
 }
-.testimonial__part .testimonial__sec .testimonial__part--content .card__content--right--padding {
+.testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--right--padding {
   padding-bottom: 26px;
 }
 
@@ -1367,17 +1392,17 @@ footer .foot .footer__two .footer_logos {
   .testimonial__part .testimonial__sec h2 {
     width: 100%;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content {
     flex-direction: column;
     padding: 20px;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content--left {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--left {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content--right {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--right {
     width: 100%;
     padding-top: 20px;
     padding-left: 20px;
@@ -1523,17 +1548,17 @@ footer .foot .footer__two .footer_logos {
   .testimonial__part .testimonial__sec h2 {
     width: 100%;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content {
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 20px;
     width: auto;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content--left {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--left {
     width: 100%;
   }
-  .testimonial__part .testimonial__sec .testimonial__part--content .card__content--right {
+  .testimonial__part .testimonial__sec .testimonial__part--content .border__test .card__content--right {
     width: 100%;
     padding: 0px;
   }
