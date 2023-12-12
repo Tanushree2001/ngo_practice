@@ -48,7 +48,7 @@ $(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -101,5 +101,21 @@ $(function () {
     // Reset the form after submission
     $("#contactForm")[0].reset();
     $(".contact-form").fadeOut();
+  });
+
+  $("header").on("click", ".bar__icon", function () {
+    var dropdownMenu = $(".dropdown__menu");
+    var barImg = $(".bar__img");
+    var crossImg = $(".cross__img");
+
+    dropdownMenu.toggleClass("open");
+
+    if (dropdownMenu.hasClass("open")) {
+      barImg.css("display", "none");
+      crossImg.css("display", "inline-block");
+    } else {
+      barImg.css("display", "inline-block");
+      crossImg.css("display", "none");
+    }
   });
 });

@@ -181,10 +181,10 @@ nav {
         a {
           color: #333; // Customize the text color as needed
           display: block;
-          text-decoration: none; // Added to remove default underline
+          text-decoration: none; 
 
           &:hover {
-            background-color: #f0f0f0; // Customize the background color on hover as needed
+            background-color: #f0f0f0; 
           }
         }
       }
@@ -210,7 +210,7 @@ nav {
 
     h2 {
       padding-top: 178px;
-      // padding-bottom: 200px;
+
       font-size: 64px;
       margin-bottom: 48px;
     }
@@ -234,21 +234,14 @@ nav {
   }
 }
 
-// .slick-list.draggable{
-//   height: max-content !important;
-// }
-
-
 //service section starts here
 .services__part {
-  // margin-top: 26.68px;
   margin-top: 54px;
 
   .services {
     gap: 90px;
     padding: 0 71px;
 
-    // align-items: center;
     .services__container {
       display: flex;
       flex-direction: column;
@@ -296,7 +289,6 @@ nav {
       position: absolute;
       left: 50%;
       top: 50%;
-      // z-index: 2;
 
       .map__content--circle {
         width: 20px;
@@ -326,7 +318,7 @@ nav {
 
     .map__content2 {
       left: 70%;
-      top: 30%;
+      top: 37%;
 
       .map__content--circle2 {
         width: 16px;
@@ -337,7 +329,7 @@ nav {
 
     .map__content3 {
       left: 35%;
-      top: 20%;
+      top: 30%;
 
       .map__content--circle3 {
         width: 18px;
@@ -359,8 +351,7 @@ nav {
 
     .map__content5 {
       left: 60%;
-      // bottom: 10%;
-      top: 70%;
+      top: 65%;
 
       .map__content--circle5 {
         width: 16px;
@@ -373,8 +364,8 @@ nav {
       position: absolute;
       left: 10%;
       bottom: 30%;
-      width: 83px; // Adjust as needed
-      height: 83px; // Adjust as needed
+      width: 83px; 
+      height: 83px; 
       background: url('../images/heartimage.webp') center center no-repeat;
       background-size: cover;
       border-radius: 50%;
@@ -415,8 +406,6 @@ nav {
   }
 
   .about__part--right {
-    // padding-top: 10px;
-    // margin-left: 86px;
     width: 61%;
 
     .line__container {
@@ -428,7 +417,6 @@ nav {
     .about__part--rightcontent {
       padding-left: 102px;
       padding-top: 32px;
-      // width: 690px;
 
       p {
         padding: 32px 0;
@@ -586,7 +574,6 @@ nav {
     }
   }
 }
-
 // project section style ends here 
 
 // what we do part style starts here
@@ -611,7 +598,6 @@ nav {
 
     .what__part--content {
       padding-left: 102px;
-      // padding-right: 110px;
 
       p {
         color: $what-para-color;
@@ -635,8 +621,6 @@ nav {
         }
 
         .insideContent__image {
-          // width: 100%;
-          // height: auto;
           padding-right: 24px;
           padding-top: 8px;
 
@@ -652,7 +636,6 @@ nav {
 
   .what__part--right {
     width: 45%;
-    // padding-top: 40px;
     align-items: center;
 
     img {
@@ -683,7 +666,6 @@ nav {
     }
 
     .blog__cards {
-      // justify-content: space-between;
       gap: 24px;
 
       .blog__card {
@@ -694,10 +676,6 @@ nav {
         img {
           border-radius: 10px;
         }
-
-        // overflow: hidden;
-        // align-items: center;
-        // display: flex;
 
         .blog__card--content {
           background-color: $yellow-color;
@@ -1160,12 +1138,14 @@ footer {
     }
   }
 
+  // services section style 
   .services__part {
     .services {
       gap: 30px;
     }
   }
 
+  // about section style 
   .about__part {
     .about__part--left {
       display: flex;
@@ -1173,6 +1153,7 @@ footer {
     }
   }
 
+  // project section style 
   .project__part {
     .project__part--content {
       .project__part--card {
@@ -1193,6 +1174,7 @@ footer {
     }
   }
 
+  // what section style 
   .what__part {
     .what__flex {
       gap: 40px;
@@ -1208,6 +1190,7 @@ footer {
   }
 }
 
+// laptop design
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .container {
     max-width: 720px;
@@ -1217,6 +1200,7 @@ footer {
     font-size: 22px;
   }
 
+  // navbar style 
   nav {
     flex-wrap: wrap;
     gap: 20px;
@@ -1237,6 +1221,7 @@ footer {
     }
   }
 
+  // banner style 
   .banner__part {
     .banner__part--left {
       padding-bottom: 50px;
@@ -1254,6 +1239,7 @@ footer {
     }
   }
 
+  // services section style 
   .services__part {
     .services {
       padding: 0 10px;
@@ -1265,6 +1251,7 @@ footer {
     }
   }
 
+  // about section style 
   .about__part {
     .about__part--container {
       gap: 16px;
@@ -1286,6 +1273,7 @@ footer {
     }
   }
 
+  // project section style 
   .project__part {
     .project__part--heading {
       width: 100%;
@@ -1305,6 +1293,7 @@ footer {
     }
   }
 
+  // what section style 
   .what__part {
     .what__flex {
       .what__part--left {
@@ -1317,6 +1306,7 @@ footer {
     }
   }
 
+  // blogs section style 
   .blogs__part {
     .blogs__container {
       .blog__cards {
@@ -1340,6 +1330,7 @@ footer {
     }
   }
 
+  // testimonial section style 
   .testimonial__part {
     .testimonial__sec {
       h2 {
@@ -1348,6 +1339,7 @@ footer {
     }
   }
 
+  // cta section style 
   .cta__part {
     .cta__part--div {
       padding: 20px;
@@ -1358,6 +1350,7 @@ footer {
     }
   }
 
+  // footer style 
   footer {
     .foot {
       flex-wrap: wrap;
@@ -1378,6 +1371,7 @@ footer {
     font-size: 32px;
   }
 
+  // navbar style 
   nav {
     flex-wrap: wrap;
     gap: 20px;
@@ -1399,6 +1393,7 @@ footer {
     }
   }
 
+  // banner style 
   .banner__part {
     .banner__part--left {
       padding-bottom: 50px;
@@ -1420,6 +1415,7 @@ footer {
     }
   }
 
+  // services section style 
   .services__part {
     .services {
       flex-wrap: wrap;
@@ -1434,6 +1430,7 @@ footer {
     }
   }
 
+  // about section style 
   .about__part {
     .about__part--container {
       flex-direction: column;
@@ -1455,12 +1452,14 @@ footer {
     }
   }
 
+  // project section style 
   .project__part {
     .project__part--heading {
       width: 100%;
     }
   }
 
+  // what section style 
   .what__part {
     .what__flex {
       flex-direction: column;
@@ -1481,6 +1480,7 @@ footer {
     }
   }
 
+  // blogs section style 
   .blogs__part {
     .blogs__container {
 
@@ -1506,13 +1506,13 @@ footer {
                 }
               }
             }
-
           }
         }
       }
     }
   }
 
+  // .testimonial section style 
   .testimonial__part {
     .testimonial__sec {
       h2 {
@@ -1541,6 +1541,7 @@ footer {
     }
   }
 
+  // cta section style 
   .cta__part {
     &--div {
       padding: 20px;
@@ -1551,6 +1552,7 @@ footer {
     }
   }
 
+  // events section style 
   .events__part {
     .events__part--content {
       flex-direction: column;
@@ -1561,6 +1563,7 @@ footer {
     }
   }
 
+  // footer style 
   footer {
     .foot {
       flex-wrap: wrap;
@@ -1588,7 +1591,9 @@ footer {
     font-size: 20px;
   }
 
+  // navbar style 
   nav {
+    background-color: $white-color;
     flex-wrap: wrap;
     gap: 10px;
 
@@ -1609,6 +1614,7 @@ footer {
     }
   }
 
+  // banner style 
   .banner__part {
     .banner__part--left {
       padding-bottom: 50px;
